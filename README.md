@@ -18,6 +18,120 @@ Nesse curso o aluno terá o primeiro contato com a plataforma .NET e sua linguag
 
 ## <a name="parte1">1 - O que é .NET?</a>
 
+- Conhecendo o framework
+- Como e aonde usar .NET
+- Certifique seu conhecimento
+
+```
+Em qual década a Microsoft foi criada?
+1980
+1970
+1960
+1950
+1990
+
+R: 1970
+```
+
+```
+Qual é a ordem correta de atuação de cada componente dentro do .NET?
+Nenhuma das alternativas.
+Código Fonte > Compilador da linguagem > Linguagem Intermediária > CLR > Linguagem de Máquina
+Código Fonte > CLR > Linguagem de Máquina
+Código Fonte > CLR > Linguagem Intermediária > Compilador da linguagem > Linguagem de Máquina
+Linguagem de Máquina > CLR > Linguagem Intermediária > Compilador da linguagem > Código Fonte
+
+R: Código Fonte > Compilador da linguagem > Linguagem Intermediária > CLR > Linguagem de Máquina
+```
+
+```
+Qual dos fatos a seguir não é verdadeiro?
+Em 2014 o empresário Satya Nadella compra a Microsoft e se torna sócio majoritário da empresa.
+O C# 1.0 foi lançado em 2002.
+O .NET 1.0 foi lançado em 2000.
+Em 2010 a Microsoft lança comercialmente o Windows Azure.
+O Roslyn é um novo compilador C# criado a partir de 2013.
+
+R: Em 2014 o empresário Satya Nadella compra a Microsoft e se torna sócio majoritário da empresa.
+```
+
+```
+O que acontece a partir de 2020 com relação ao .NET?
+O .NET Framework deixará de ser evoluido, mantendo-se a evolução apenas do .NET Core, que passará se chamar apenas .NET.
+A Microsoft irá criar uma nova implementação open source e multiplataforma.
+A Microsoft irá vender seus códigos para a Oracle.
+Todas as alternativas estão corretas.
+VB.NET passará a ser a única versão suportada na plataforma.
+
+R: O .NET Framework deixará de ser evoluido, mantendo-se a evolução apenas do .NET Core, que passará se chamar apenas .NET.
+```
+
+```
+O que era o projeto Mono criado por Miguel de Icaza em 2001?
+Uma nova implementação do Java, focado em Windows.
+Uma nova linguagem de programação.
+Um projeto para elaboração de monografias.
+Uma reimplementação do .NET patrocinado pela Microsoft, que viria a se chamar .NET Core.
+Uma reimplementação black box do .NET, criado de forma independente por ele com foco em ser open source e multiplataforma.
+
+R: Uma reimplementação black box do .NET, criado de forma independente por ele com foco em ser open source e multiplataforma.
+```
+
+```
+O .NET Core é uma implementação open source e multiplataforma do .NET Standard. Qual dos itens abaixo é uma das outras implementações?
+.NET Framework
+C#
+.NET Forever
+CLR
+Mini .NET
+
+R: .NET Framework
+```
+
+```
+Qual o foco da Microsoft a partir de 2014?
+Sistemas Operacionais Linux.
+Docker.
+Sistemas Operacionais Windows
+Java.
+Cloud.
+
+R: Cloud.
+```
+
+```
+Em 1999, Jason Zander ajudou na criação de um CLR. Qual o significado de CLR?
+Common Language Reactive
+Converter Language Runtime
+Common Literal Runtime
+Cascade Language Runtime
+Common Language Runtime
+
+R: Common Language Runtime
+```
+
+```
+Em qual ano surgiu a primeira versão do Visual Studio?
+2002
+1970
+1995
+1997
+2000
+
+R; 1997
+```
+
+```
+Qual linguagem de programação começou a ser criada pela Microsoft em 1999 com ajuda de Anders Hejlsberg?
+FoxPro
+Visual Basic
+C#
+F#
+C++
+
+R: C#
+```
+
 
 
 [Voltar ao Índice](#indice)
@@ -27,7 +141,121 @@ Nesse curso o aluno terá o primeiro contato com a plataforma .NET e sua linguag
 
 ## <a name="parte2">2 - Iniciando com .NET</a>
 
+- Preparando o ambiente
+- Conhecendo a CLI do .NET
+- Criando uma aplicação console
+- Certifique seu conhecimento
 
+```
+Qual o comando para criar uma aplicação console via CLI do .NET com o nome 'Teste'?
+dotnet new console -n Teste
+dotnet build Teste
+dotnet new console Teste
+dotnet new Teste
+dotnet new -h
+
+R: dotnet new console -n Teste
+```
+
+```
+O que faz o comando 'dotnet restore' na CLI do .NET?
+Restaura os pacotes e dependências do projeto.
+Executa a aplicação.
+Publica a aplicação.
+Cria um novo projeto.
+Compila o código fonte e gera as DLL's.
+
+R: Restaura os pacotes e dependências do projeto.
+
+```
+
+```
+Qual é o comando da CLI do .NET para compilar o código fonte e gerar as DLL's?
+dotnet build
+dotnet run
+Nenhuma das alternativas.
+dontet --help
+dotnet restore
+
+R: dotnet build
+```
+
+```
+O que significa CLI?
+Common Literal Interface
+Command Line Interface
+Command Line Interactive
+Common Language Intermediate
+C# Language Interpreter
+
+R: Command Line Interface
+```
+
+```
+Qual dos itens abaixo não compõe o pacote de instalação do .NET SDK?
+Bibliotecas de Desenvolvimento
+CLI
+C#
+CLR
+Visual Studio Code
+
+R: Visual Studio Code
+```
+
+```
+Qual dos itens abaixo é uma opção multiplataforma para edição/criação do meu código fonte em .NET?
+Todas as alternativas são corretas.
+Visual Studio Code.
+Visual Studio.
+Word.
+Visual Studio for Mac.
+
+R: Visual Studio Code.
+```
+
+```
+Qual dos itens abaixo é necessário ter instalado na máquina para desenvolver aplicações .NET?
+.NET SDK
+Java
+Nuget
+Nenhuma das alternativas.
+.NET Runtime
+
+R: .NET SDK
+```
+
+```
+O que é uma aplicação console?
+Uma aplicação que depende do windows para ser executada.
+Uma aplicação que é executada em um terminal.
+Uma aplicação para trabalhar com chamadas HTTP Restful.
+Uma aplicação que roda na web.
+Todas as alternativas estão corretas.
+
+R: Uma aplicação que é executada em um terminal.
+```
+
+```
+Qual o comando para rodar uma aplicação .NET via CLI?
+dotnet restore
+dotnet new
+dotnet build
+dotnet run
+dotnte publish
+
+R: dotnet run
+```
+
+```
+Qual o comando parâmetro para visualizar a documentação de ajuda da CLI do .NET?
+--info
+--help
+build
+new
+--version
+
+R: --help
+```
 
 [Voltar ao Índice](#indice)
 
