@@ -989,7 +989,153 @@ R: Os métodos não podem ter um tipo de retorno.
 
 ## <a name="parte6">6 - Trabalhando com structs, interfaces e enums</a>
 
+**O que são Structs**
 
+![](mod06/img/struct_1.png)
+
+![](mod06/img/struct_2.png)
+
+![](mod06/img/struct_3.png)
+
+![](mod06/img/struct_4.png)
+
+![](mod06/img/struct_5.png)
+
+[https://www.eximiaco.tech/pt/category/fundamentos/](https://www.eximiaco.tech/pt/category/fundamentos/)
+
+**Entendendo a função de interfaces e enums**
+
+![](mod06/img/inter_1.png)
+
+![](mod06/img/inter_2.png)
+
+![](mod06/img/inter_3.png)
+
+![](mod06/img/enums_1.png)
+
+![](mod06/img/enums_2.png)
+
+![](mod06/img/enums_3.png)
+
+![](mod06/img/enums_4.png)
+
+![](mod06/img/enums_5.png)
+
+**Certifique seu conhecimento**
+
+
+```
+Um Enum que não declara explicitamente um tipo subjacente tem um tipo subjacente:
+sbyte
+string
+interface
+int
+object
+
+R: int
+```
+
+```
+Sobre Enums é correto afirmar:
+Eles fornecem significado semântico a valores discretos.
+São chamados com o operador new.
+São tipo de referência.
+Pode conter métodos, propriedades, eventos e indexadores.
+Nenhum das alternativas.
+
+R: Eles fornecem significado semântico a valores discretos.
+```
+
+```
+Qual área da memória que as Classes requerem alocação e as Structs não requerem?
+RAM
+Flash
+Heap
+HD
+Stack
+
+R: Heap
+```
+
+```
+Qual das alternativas abaixo não é verdadeira sobre Structs?
+Structs não aceitam herança determinada pelo desenvolvedor.
+São úteis para pequenas estruturas de dados que possuem semântica de valor.
+Uma variável de um tipo de struct armazena diretamente os dados da estrutura.
+O uso de structs em vez de classes para pequenas estruturas de dados pode fazer uma grande diferença no número de alocações de memória.
+As structs são tipos de valor e requerem alocação de heap.
+
+R: As structs são tipos de valor e requerem alocação de heap.
+```
+
+```
+Qual o tipo que as Strucuts se enquadram?
+Classes.
+Nenhuma das alternativas.
+Tipo referência.
+Tipo valor.
+Objetos.
+
+R: Tipo valor.
+```
+
+```
+O que é uma Interface em C#?
+São instâncias de uma classe.
+É a tela do Visual Studio Code onde o desenvolvedor escreve o código.
+São os tipos mais fundamentais de C#.
+Uma interface define um contrato que pode ser implementado por classes e structs.
+Nenhuma das alternativas.
+
+R: Uma interface define um contrato que pode ser implementado por classes e structs.
+
+```
+
+```
+O que é um Enum no C#?
+É um tipo de valor distinto com um conjunto de constantes nomeadas.
+São os tipos mais fundamentais de C#.
+Nenhum das alternativas.
+Um contrato que pode ser implementado por classes e structs.
+É um tipo abstrata para inteiros.
+
+R: É um tipo de valor distinto com um conjunto de constantes nomeadas.
+
+```
+
+```
+O que são Structs?
+São instâncias de uma classe.
+São os tipos mais fundamentais de C#.
+Nenhuma das alternativas.
+São estruturas de dados que podem conter membros de dados e membros de ação.
+São um contrato que pode ser implementado por classes.
+
+R: São estruturas de dados que podem conter membros de dados e membros de ação.
+
+```
+
+```
+Sobre Interface é correto afirmar:
+Todas as afirmativas estão corretas.
+As interfaces podem empregar herança múltipla.
+Uma interface pode conter métodos, propriedades, eventos e indexadores.
+Uma interface define um contrato que pode ser implementado por classes e structs.
+Uma interface não fornece implementações dos membros que define - apenas suas “assinaturas”;
+
+R: Todas as afirmativas estão corretas.
+```
+
+```
+Qual área da memória que normalmente as Structs são alocadas?
+Stack
+Flash
+HD
+RAM
+Heap
+
+R: Stack
+```
 
 [Voltar ao Índice](#indice)
 
