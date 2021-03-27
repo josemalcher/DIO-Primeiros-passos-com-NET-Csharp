@@ -264,6 +264,142 @@ R: --help
 
 ## <a name="parte3">3 - Conhecendo o C#</a>
 
+### O que é e como funciona o C#
+
+![](mod03/img/conceitos_1.png)
+
+![](mod03/img/conceitos_2.png)
+
+![](mod03/img/conceitos_3.png)
+
+![](mod03/img/conceitos_4.png)
+
+![](mod03/img/conceitos_5.png)
+
+![](mod03/img/conceitos_6.png)
+
+
+### Estrutura do programa
+
+![](mod03/img/estrutura_1.png)
+
+![](mod03/img/estrutura_2.png)
+
+
+[Códigos Demonstrados - mod03\solution](mod03/solution)
+
+Questões
+
+```
+Qual dos itens a seguir é parte da estrutura de um programa C#?
+Assemblies
+Tipos
+Membros
+Namespaces
+Todas as alternativas estão corretas.
+
+R: Todas as alternativas estão corretas.
+```
+
+```
+O código e os recursos de Linguagem Intermediária são armazenados no disco em um arquivo executável chamado:
+C#
+Assembly
+Todas as alternativas estão corretas.
+CLR
+IL
+
+R: Assembly
+```
+
+```
+Qual dos itens a seguir é exemplo de tipo?
+Campos
+Métodos.
+Classe.
+Propriedades.
+Todas as alternativas estão corretas.
+
+R: Classe.
+```
+
+```
+Qual o nome da compilação para converter o código de Linguagem Intermediária em instruções de máquina nativas?
+build
+Runtime
+dll
+CLR
+JIT (Just in Time)
+
+R: JIT (Just in Time)
+```
+
+```
+O que um código C# gera ao ser compilado no comando "dotnet build"?
+Nenhuma das alternativas.
+Código compilado em Linguagem Intermediária.
+Código CLR.
+Código compilado em Linguagem de Máquina.
+Código JIT.
+
+R: Código compilado em Linguagem Intermediária.
+```
+
+```
+Qual é a função do Garbage Collector?
+Converter código compilado em Linguagem de Máquina.
+Limpar objetos não utilizados da memória.
+Restaurar os pacotes e dependências do projeto.
+Converter código compilado em Linguagem Intermediária.
+Gerenciar as exceptions da aplicação.
+
+R: Limpar objetos não utilizados da memória.
+```
+
+```
+Quem converte os assemblies em Linguagem de Máquina?
+CLR
+CLI
+C#
+Bibliotecas de Desenvolvimento
+Visual Studio Code
+
+R: CLR
+```
+
+```
+Os assemblies gerados na compilação do C# geralmente possuem qual extensão?
+.exe ou .dll
+.jar
+.cs ou .csproj
+.sln
+.doc
+
+R: .exe ou .dll
+```
+
+```
+Quando os programas C# são compilados, eles são fisicamente empacotados em:
+Classes.
+Assemblies.
+Nenhuma das alternativas está correta.
+Interfaces.
+Campos.
+
+R: Assemblies.
+```
+
+```
+Qual dos itens a seguir é exemplo de membro?
+Todas as alternativas estão corretas.
+Assemblies.
+Campos.
+Interfaces.
+Classe.
+
+R: Campos.
+```
+
 
 
 [Voltar ao Índice](#indice)
