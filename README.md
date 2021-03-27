@@ -409,7 +409,329 @@ R: Campos.
 
 ## <a name="parte4">4 - Conhecendo variáveis e instruções</a>
 
+![](mod04/img/tipo_01.png)
 
+![](mod04/img/tipo_02.png)
+
+![](mod04/img/tipo_03.png)
+
+![](mod04/img/tipo_04.png)
+
+
+**Utilizando instruções em Programas**
+
+![](mod04/img/instrucoes_1.png)
+
+![](mod04/img/instrucoes_2.png)
+
+![](mod04/img/instrucoes_3.png)
+
+![](mod04/img/instrucoes_4.png)
+
+
+**Exemplificando o Conteúdo**
+
+```csharp
+using System;
+
+namespace solution
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             static void Declaracoes()
+        {
+            int a;
+            int b = 2, c = 3;
+            const int d = 4;
+            a = 1;
+            Console.WriteLine(a + b + c + d);
+        }
+
+        static void InstrucaoIf(string[] args)
+        {
+            if (args.Length == 0)
+            {
+                Console.WriteLine("Nenhum argumento");
+            }
+            else if (args.Length == 1)
+            {
+                Console.WriteLine("Um argumento");
+            }
+            else
+            {
+                Console.WriteLine($"{args.Length} argumentos");
+            }
+        }
+
+        static void InstrucaoSwitch(string[] args)
+        {
+            int numeroDeArgumentos = args.Length;
+            switch (numeroDeArgumentos)
+            {
+                case 0:
+                    Console.WriteLine("Nenhum argumento");
+                    break;
+                case 1:
+                    Console.WriteLine("Um argumento");
+                    break;
+                default:
+                    Console.WriteLine($"{numeroDeArgumentos} argumentos");
+                    break;
+            }
+        }
+
+        static void InstrucaoWhile(string[] args)
+        {
+            int i = 0;
+            while (i < args.Length)
+            {
+                Console.WriteLine(args[i]);
+                i++;
+            }
+        }
+
+        static void InstrucaoDo(string[] args)
+        {
+            string texto;
+            do
+            {
+                texto = Console.ReadLine();
+                Console.WriteLine(texto);
+            } while (!string.IsNullOrEmpty(texto));
+        }
+
+        static void InstrucaoFor(string[] args)
+        {
+            for (int i = 0; i < args.Length; i++)
+            {
+                Console.WriteLine(args[i]);
+            }
+        }
+
+        static void InstrucaoForeach(string[] args)
+        {
+            foreach (string s in args)
+            {
+                Console.WriteLine(s);
+            }
+        }
+
+        static void InstrucaoBreak(string[] args)
+        {
+            while (true)
+            {
+                string s = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(s))
+                {
+                    break;
+                }
+
+                Console.WriteLine(s);
+            }
+        }
+
+        static void InstrucaoContinue(string[] args)
+        {
+            for (int i = 0; i < args.Length; i++)
+            {
+                if (args[i].StartsWith("/"))
+                {
+                    continue;
+                }
+                
+                Console.WriteLine(args[i]);
+            }
+        }
+
+        static void InstrucaoReturn(string[] args)
+        {
+            int Somar(int a, int b)
+            {
+                return a + b;
+            }
+
+            Console.WriteLine(Somar(1, 2));
+            Console.WriteLine(Somar(3, 4));
+            Console.WriteLine(Somar(5, 6));
+            return;
+        }
+
+        static void InstrucoesTryCatchFinallyThrow(string[] args)
+        {
+            double Dividir(double x, double y)
+            {
+                if (y == 0)
+                    throw new DivideByZeroException();
+
+                return x / y;
+            }
+
+            try
+            {
+                if (args.Length != 2)
+                {
+                    throw new InvalidOperationException("Informe 2 números");
+                }
+
+                double x = double.Parse(args[0]);
+                double y = double.Parse(args[1]);
+                Console.WriteLine(Dividir(x, y));
+            }
+            catch (InvalidOperationException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Erro genérico: {e.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("Até breve!");
+            }
+        }
+
+        static void InstrucaoUsing(string[] args)
+        {
+            using (System.IO.TextWriter w = System.IO.File.CreateText("teste.txt"))
+            {
+                w.WriteLine("Line 1");
+                w.WriteLine("Line 2");
+                w.WriteLine("Line 3");
+            }
+        }
+        }
+    }
+}
+
+```
+
+![](mod04/img/array_1.png)
+
+![](mod04/img/array_2.png)
+
+![](mod04/img/array_3.png)
+
+![](mod04/img/array_4.png)
+
+![](mod04/img/array_5.png)
+
+![](mod04/img/array_6.png)
+
+**Questões**
+
+```
+Qual destes não é exemplo de um tipo Referência?
+interface
+enum
+string[]
+string
+object
+
+R: enum
+```
+
+```
+Qual destes não é exemplo de um tipo Valor?
+class
+int
+char
+c. bool
+struct
+
+R: class
+```
+
+```
+O que é correto afirmar sobre variáveis de tipo Referência?
+Variáveis de tipos de referência contêm diretamente seus dados.
+A alteração de uma variável de tipo referência não afeta outras que tenham copiado seu valor.
+As variáveis de tipo referência têm sua própria cópia dos dados e não é possível que as operações afetem outra variável.
+Nenhuma das alternativas.
+Variáveis de tipos de referência armazenam referências a seus ponteiros direto na memória.
+
+R: Variáveis de tipos de referência armazenam referências a seus ponteiros direto na memória.
+```
+
+```
+Quais destes são instruções condicionais?
+for e while
+try e catch
+using e declare
+break e continue
+if e switch
+
+R: if e switch
+```
+
+```
+Quais destes são instruções para tratativa de exceções?
+using e declare
+if e switch
+try e catch
+for e while
+break e continue
+
+R: try e catch
+```
+
+```
+Qual das inicializações de array a seguir é inválida?
+string[] a = new int[] {1, 2, 3};
+int[] a = {1, 2, 3};
+Todas estão corretas.
+int[] a = new int[] {1, 2, 3};
+int[] a = new int[10];
+
+R: string[] a = new int[] {1, 2, 3};
+```
+
+```
+Os índices dos elementos de um array começam a ser contados em:
+0
+-1
+Nenhuma das alternativas.
+1
+null
+
+R: 0
+```
+
+```
+O que é correto afirmar sobre variáveis de tipo Valor?
+Variáveis de tipos de valor armazenam referências a seus dados.
+Nenhuma das alternativas.
+Variáveis de tipos de valor contêm diretamente seus dados.
+É possível que duas variáveis de tipo valor façam referência ao mesmo objeto.
+A alteração de uma variável de tipo valor afeta outras que tenham copiado seu valor.
+
+R: Variáveis de tipos de valor contêm diretamente seus dados.
+```
+
+```
+Qual das afirmações não é verdadeira sobre Arrays?
+Arrays são tipos de valor.
+Todos os elementos de um array são do mesmo tipo.
+Os elementos de um array são acessados através de índices.
+Ao criar um array é especificado o tamanho da nova instância, que é fixo durante todo o tempo de vida da instância.
+Um array é um estrutura de dados que contém um número X de elementos.
+
+R: Arrays são tipos de valor.
+```
+
+```
+Quais destes são instruções de repetição?
+break e continue
+if e switch
+using e declare
+try e catch
+for e while
+
+R: for e while
+```
 
 [Voltar ao Índice](#indice)
 
