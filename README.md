@@ -740,6 +740,246 @@ R: for e while
 
 ## <a name="parte5">5 - Classes e objetos essenciais em C#</a>
 
+**O que são Classes e Objetos em C#**
+
+![](mod05/img/obj_1.png)
+
+![](mod05/img/obj_2.png)
+
+![](mod05/img/obj_3.png)
+
+![](mod05/img/obj_4.png)
+
+![](mod05/img/obj_5.png)
+
+![](mod05/img/obj_6.png)
+
+![](mod05/img/obj_7.png)
+
+![](mod05/img/obj_8.png)
+
+![](mod05/img/obj_9.png)
+
+
+**Como aplicar classes e objetos em projetos**
+
+```csharp
+namespace solutions.Heranca
+{
+    public class Ponto
+    {
+        public int x, y;
+        private int distancia;
+        
+        public Ponto(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        protected void CalcularDistancia()
+        {
+            //Faz alguma coisa...
+            CalcularDistancia2();
+        }
+
+        private void CalcularDistancia2()
+        {
+            //Faz alguma coisa...
+        }
+
+        public virtual void CalcularDistancia3()
+        {
+            //Faz alguma coisa...
+        }
+    }
+}
+```
+
+
+```csharp
+namespace solutions.Heranca
+{
+    public class Ponto3D : Ponto
+    {
+        public int z;
+        public Ponto3D(int x, int y, int z) : base(x, y)
+        {
+            this.z = z;
+            CalcularDistancia();
+        }
+
+        public static void Calcular()
+        {
+            //Faz alguma coisa...
+        }
+        public override void CalcularDistancia3()
+        {
+            //Faz outra coisa ...
+            base.CalcularDistancia3();
+        }
+    }
+}
+```
+
+
+```csharp
+namespace solutions.Metodos
+{
+    public class Ref
+    {
+        static void Inverter(ref int x, ref int y)
+        {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+
+        public static void Inverter()
+        {
+            int i = 1, j = 2;
+            Inverter(ref i, ref j);
+            System.Console.WriteLine($"{i} {j}");    // Escreve "2 1"
+        }
+    }
+}
+```
+
+
+```csharp
+namespace solutions.Metodos
+{
+    public class Out
+    {
+      static void Dividir(int x, int y, out int resultado, out int resto) 
+        {
+            resultado = x / y;
+            resto = x % y;
+        }
+        
+        public static void Dividir() 
+        {
+            Dividir(10, 3, out int resultado, out int resto);
+            System.Console.WriteLine("{0} {1}", resultado, resto);	// Escreve "3 1"
+        }
+    }
+}
+```
+
+**Certifique seu conhecimento**
+
+```
+Um método internal pode ser acessado por qualquer parte do código. Sobre esta afirmação:
+Ela está correta em partes, pois o internal só pode ser acessado por classes do seu próprio assembly.
+Nenhuma das alternativas.
+Ela está totalmente correta.
+Ela está totalmente errada.
+Ela estaria correta se estive falando de um método private.
+
+R: Ela está correta em partes, pois o internal só pode ser acessado por classes do seu próprio assembly.
+```
+
+```
+Sobre métodos estáticos é correto afirmar:
+Pertencem a classe e não ao objeto.
+Não são visualizados através de uma instância da classe.
+São declarados com o modificador "static".
+Todas as alternativas estão corretas.
+São acessados diretamente pela classe.
+
+R: Todas as alternativas estão corretas.
+```
+
+```
+Quando a classe A herda da classe B, a classe A herda todos os membros da classe B. Sobre esta afirmação é correto afirmar que:
+Nem todos os membros são herdados.
+Só serão herdados os membros static.
+Só serão herdados os membros protected.
+Só serão herdados os membros public.
+Só serão herdados os membros private.
+
+R: Nem todos os membros são herdados.
+```
+
+```
+Uma classe é uma estrutura de dados que combina:
+Objetos e memória.
+Nenhuma das alternativas.
+Ação e reação.
+Estado e ações.
+Público e privado.
+
+R: Estado e ações.
+```
+
+```
+Sobre objetos é correto afirmar
+A memória ocupada por um objeto é recuperada automaticamente quando o objeto não está mais acessível.
+São instâncias de uma classe.
+São criados usando o operador new.
+Possui membros.
+Todas as alternativas estão corretas.
+
+R: Todas as alternativas estão corretas.
+```
+
+```
+Sobre membros é correto afirmar:
+Membros estáticos pertencem a classe e membros de instância pertencem ao objeto.
+Todas as alternativas são corretas.
+Constantes, variáveis, métodos, propriedades e construtores são exemplos de membros.
+Cada membro de uma classe tem uma acessibilidade associada, que controla as regiões do texto do programa que podem acessar o membro.
+Os membros de uma classe podem ser estáticos ou membros da instância.
+
+R: Todas as alternativas são corretas.
+
+```
+
+```
+Qual dos itens abaixo não representa um tipo de acessibilidade de um membro?
+protected
+internal
+private
+public
+static
+
+R: static
+```
+
+```
+O que indica o modificar "ref" antes de um parâmetro em um método?
+Indica que aquele parâmetro será passado como referência.
+Indica que que o parâmetro não pode ser nulo.
+Não indica nada.
+Indica que qualquer ação que afete o valor final do parâmetro não será retornada para fora do método.
+Nenhuma das alternativas.
+
+R: Indica que aquele parâmetro será passado como referência.
+```
+
+```
+O que são objetos?
+São um membro que implementa uma computação ou ação.
+São os tipos mais fundamentais de C#.
+São instâncias de uma classe.
+São uma estrutura de dados.
+Todas as alternativas são corretas.
+
+R: São instâncias de uma classe.
+
+```
+
+```
+Sobre métodos é errado afirmar:
+Método implementa uma computação ou ação que pode ser executada por um objeto ou classe.
+Método é um tipo de membro.
+Os métodos podem ter uma lista de parâmetros.
+Os métodos não podem ter um tipo de retorno.
+Os parâmetros de um método podem ser do tipo valor ou referência.
+
+R: Os métodos não podem ter um tipo de retorno.
+```
+
 
 
 [Voltar ao Índice](#indice)
