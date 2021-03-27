@@ -1144,7 +1144,17 @@ R: Stack
 
 ## <a name="parte7">7 - Uma síntese do que é .NET</a>
 
+**Revisão introdutória**
 
+**Praticando primeiros passos**
+
+
+**Dinâmica de desenvolvimento**
+
+
+**Considerações finais**
+
+[mod07fim\solutions](mod07fim/solutions)
 
 [Voltar ao Índice](#indice)
 
